@@ -4,6 +4,7 @@
              x:Class="AxelSemana3.MainPage">
     
     <StackLayout BackgroundColor="#FFD700">
+        
         <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
             <Label Text="Universidad Israel" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
         </Frame>

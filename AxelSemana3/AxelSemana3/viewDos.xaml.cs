@@ -65,6 +65,7 @@ namespace AxelSemana3
         {
             try
             {
+                //git
                 double dato4 = Convert.ToDouble(txtDato4.Text);
                 if (dato4 > 10)
                 {
