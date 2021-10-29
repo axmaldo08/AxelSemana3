@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AxelSemana3.viewDos">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFD700" >
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                <Label x:Name="lbUsuario" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nota de seguimiento 1" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato1" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" TextChanged="txtDato1_TextChanged"></Entry>
+                <Label Text="Examen 1" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato2" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextChanged="txtDato2_TextChanged" ></Entry>
+
+
+                <Label Text="Nota de seguimiento 2" Grid.Row="2" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato4" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" TextChanged="txtDato4_TextChanged"></Entry>
+                <Label Text="Examen 2" Grid.Row="3" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato5" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" TextChanged="txtDato5_TextChanged"></Entry>
+
+                <Label Text="Nota Parcial 1" Grid.Row="4" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato3" IsReadOnly="True" Grid.Row="4" Grid.Column="1"></Entry>
+                <Label Text="Nota Parcial 2" Grid.Row="5" Grid.Column="0"></Label>
+                <Entry x:Name="txtDato6" IsReadOnly="True" Grid.Row="5" Grid.Column="1"></Entry>
+                <Label Text="Nota final" Grid.Row="6" Grid.Column="0"></Label>
+                <Entry x:Name="txtResultado" IsReadOnly="True" Grid.Row="6" Grid.Column="1"></Entry>
+            </Grid>
+            <Button x:Name="btnPromedio" Text="Calcular Promedio" Clicked="btnPromedio_Clicked"></Button>
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
